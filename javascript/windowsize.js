@@ -1,13 +1,13 @@
 // Viewport dimensions used for conditional logic
 // vanilla JS window width and height
 function getWindowSize() {
-	var w=window,
-		d=document,
-		e=d.documentElement,
-		g=d.getElementsByTagName('body')[0];
-	var x = w.innerWidth||e.clientWidth||g.clientWidth||null;
-	var y = w.innerHeight||e.clientHeight||g.clientHeight||null;
-	conlog('Your currently viewing at ' + x + 'x' + y);
+	var w = window,
+			d = document,
+			e = d.documentElement,
+			g = d.getElementsByTagName('body')[0],
+			x = w.innerWidth || e.clientWidth || g.clientWidth || null,
+			y = w.innerHeight || e.clientHeight || g.clientHeight || null;
+	console.log('Your currently viewing at ' + x + 'x' + y);
 	return [x, y];
 }
 var windowSize = getWindowSize();
@@ -16,9 +16,9 @@ var windowSize = getWindowSize();
 var waitForFinalEvent = (function () {
 	var timers = {};
 	return function (callback, ms, uniqueId) {
-		if (!uniqueId) uniqueId = "Don't call this twice without a uniqueId";
-		if (timers[uniqueId]) clearTimeout (timers[uniqueId]);
-		timers[uniqueId] = setTimeout(callback, ms);
+	if (!uniqueId) uniqueId = "Don't call this twice without a uniqueId";
+	if (timers[uniqueId]) clearTimeout (timers[uniqueId]);
+	timers[uniqueId] = setTimeout(callback, ms);
 	};
 })();
 
