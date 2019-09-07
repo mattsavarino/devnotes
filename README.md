@@ -1,4 +1,8 @@
 # devnotes
 Developer Notes &amp; Scripts
 
-More code will be posted soon.
+* [JavaScript](./javascript/)
+* [Unity](./unity/scripts/)
+* [Git](./git/)
+* [CSS](./css/)
+* more examples posted soon
