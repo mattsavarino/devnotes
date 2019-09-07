@@ -1,0 +1,8 @@
+# Ignore hidden Mac file
+.DS_Store
+
+# Track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# Dependency directories
+node_modules/

@@ -1,0 +1,20 @@
+{
+  "name": "devnotes",
+  "version": "1.0.0",
+  "description": "Developer Notes &amp; Scripts",
+  "main": "index.js",
+  "scripts": {
+    "server": "python -m SimpleHTTPServer 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattsavarino/devnotes.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattsavarino/devnotes/issues"
+  },
+  "homepage": "https://github.com/mattsavarino/devnotes#readme"
+}
